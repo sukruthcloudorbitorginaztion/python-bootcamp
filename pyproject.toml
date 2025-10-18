@@ -1,0 +1,34 @@
+[build-system] 
+requires = ["setuptools", "wheel"] 
+build-backend = "setuptools.build_meta" 
+
+
+[project] 
+name = "python_bootcamp_cloudorbit" 
+version = "0.1.0" 
+description = "Practice and learn Python with examples, exercises, and mini-projects." 
+authors = [ 
+    { name = "sukruth grandhi", email = "sukruth.g@cloudorbit.tech" } 
+]
+license = { file = "LICENSE" }
+readme = "README.md"
+classifiers = [ 
+    "Programming Language :: Python :: 3.9", 
+    "Programming Language :: Python :: Implementation :: CPython", 
+    "License :: OSI Approved :: BSD License", 
+    "Intended Audience :: Developers", 
+    "Operating System :: POSIX :: Linux", 
+    "Operating System :: Microsoft :: Windows", 
+    "Operating System :: MacOS", 
+    "Operating System :: MacOS :: MacOS X", 
+]
+dependencies = [
+    "mako>=1.2.4"  # Add the Mako template engine
+]
+
+[project.optional-dependencies] 
+dev = [ 
+    "twine", 
+    "build",
+    "pytest" 
+] 
