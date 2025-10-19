@@ -23,12 +23,17 @@ classifiers = [
     "Operating System :: MacOS :: MacOS X", 
 ]
 dependencies = [
-    "mako>=1.2.4"  # Add the Mako template engine
+    "mako>=1.2.4",  # Add the Mako template engine
+    "beautifulsoup4>=4.12.0"
 ]
 
 [project.optional-dependencies] 
 dev = [ 
     "twine", 
     "build",
-    "pytest" 
+    "pytest",
+     "requests-mock"
 ] 
+
+[tool.setuptools.packages.find]
+include = ["python_bootcamp_cloudorbit*"]
