@@ -19,11 +19,17 @@
 ### **Assignment 3: Configure Git**
 
 * Set up Git configuration using appropriate commands.
+* If you encounter the error **"fatal: not in a git directory"** while setting Git configuration for a local repository, initialize the repository first by running `git init`. You will learn more about this command in the upcoming session. After initialization, run the `git config` command again.
 * Provide the output of the following command:
 
   ```bash
   git config --global --list
   ```
 * Understand and write a note explaining the difference between **Local**, **Global**, and **System-level** Git configurations.
+
+
+
+
+
 
 
